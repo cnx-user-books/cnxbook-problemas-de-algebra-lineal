@@ -1,0 +1,611 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Espacios Vectoriales</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>69b566f9-141a-45f4-8ad9-b7cff524b38c</md:uuid>
+</metadata>
+  <content>
+    <para id="id2253708">Ejercicios 6.1 Espacios Vectoriales realesDaniel Felipe
+González Obando</para>
+    <para id="id2253721">Texto ÁLGEBRA LINEAL. Bernard Kolman, David R. Hill</para>
+    <para id="id2253736">3. Determine si el conjunto dado V es cerrado bajo las operaciones <m:math><m:mo>⊕</m:mo></m:math> y
+<m:math><m:mo>⊙</m:mo></m:math>.</para>
+    <para id="id2253759">V es el conjunto de todos los polinomios de la forma <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow></m:math> donde
+<m:math><m:mi>a</m:mi></m:math>, <m:math><m:mi>b</m:mi></m:math> y <m:math><m:mi>c</m:mi></m:math> son números reales, y <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>;</para>
+    <equation id="id2253840">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>b</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msub>
+            <m:mo>⊕</m:mo>
+            <m:mrow/>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>b</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>b</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>b</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254023">y</para>
+    <equation id="id2254029">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mi>r</m:mi>
+          <m:mo>⊙</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>a</m:mi>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mi>b</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>c</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>r</m:mi>
+            <m:mi>a</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>r</m:mi>
+            <m:mi>b</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>r</m:mi>
+          <m:mi>c</m:mi>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254110">13. determine si el conjunto dado, junto con las operaciones dadas es un
+espacio vectorial. Si no lo es, enumere las propiedades de la definición 1 que
+no se cumplen.</para>
+    <para id="id2254121">El conjunto de todas las ternas ordenadas de números reales de la forma <m:math><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:math> con las operaciones</para>
+    <equation id="id2253058">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>,</m:mo>
+            <m:mi>z</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>⊕</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>,</m:mo>
+            <m:msup>
+              <m:mi>z</m:mi>
+              <m:mo>'</m:mo>
+            </m:msup>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>,</m:mo>
+            <m:mi>z</m:mi>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mi>z</m:mi>
+              <m:mo>'</m:mo>
+            </m:msup>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254467">y</para>
+    <equation id="id2254472">
+      <m:math mode="display">
+        <m:mrow>
+          <m:mi>c</m:mi>
+          <m:mo>⊙</m:mo>
+          <m:mo>(</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>,</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>,</m:mo>
+          <m:mi>z</m:mi>
+          <m:mo>)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>(</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>,</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>,</m:mo>
+          <m:mo form="prefix">cz</m:mo>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254519">Solución.</para>
+    <para id="id2254525">3.</para>
+    <para id="id2254528">Proof 
+
+El problema nos dice <m:math><m:mrow><m:mi>a</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>c</m:mi></m:mrow></m:math>; <m:math><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>∈</m:mo><m:mi mathvariant="double-struck">R</m:mi></m:mrow></m:math>; y <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math></para>
+    <para id="id2254607">entonces si</para>
+    <equation id="id2254610">
+      <m:math>
+        <m:mrow>
+          <m:mover accent="true">
+            <m:mi>u</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>b</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>c</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="id2254666">
+      <m:math>
+        <m:mrow>
+          <m:mover accent="true">
+            <m:mi>v</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>b</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>c</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254721">tendremos</para>
+    <equation id="id2254724">
+      <m:math>
+        <m:mrow>
+          <m:mover accent="true">
+            <m:mi>u</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⊕</m:mo>
+          <m:mover accent="true">
+            <m:mi>v</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>b</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>b</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254835">cambiando <m:math><m:mi>b</m:mi></m:math> por <m:math><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math>,</para>
+    <equation id="id2254861">
+      <m:math>
+        <m:mrow>
+          <m:mover accent="true">
+            <m:mi>u</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⊕</m:mo>
+          <m:mover accent="true">
+            <m:mi>v</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mn>1</m:mn>
+              <m:mrow/>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2254984">reduciendo la expresión <m:math><m:mrow><m:mo>(</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mn>1</m:mn><m:mrow/></m:msub><m:mo>)</m:mo></m:mrow></m:math>,</para>
+    <equation id="id2255030">
+      <m:math>
+        <m:mrow>
+          <m:mover accent="true">
+            <m:mi>u</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⊕</m:mo>
+          <m:mover accent="true">
+            <m:mi>v</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mn>2</m:mn>
+              <m:mrow/>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2255149">tomando <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math> como <m:math><m:mi>a</m:mi></m:math>,</para>
+    <equation id="id2255185">
+      <m:math>
+        <m:mrow>
+          <m:mover accent="true">
+            <m:mi>u</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⊕</m:mo>
+          <m:mover accent="true">
+            <m:mi>v</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mrow/>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mn>2</m:mn>
+              <m:mrow/>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="id2255294">y por tanto <m:math><m:mrow><m:mi>b</m:mi><m:mo>≠</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:math>, con lo cual concluimos que V no esta cerrado
+bajo las operaciones <m:math><m:mo>⊕</m:mo></m:math> y <m:math><m:mo>⊙</m:mo></m:math>.
+<m:math><m:mo>□</m:mo></m:math></para>
+<!--empty paragraphs get left behind.-->
+    <para id="id2255345">13.</para>
+    <para id="id2255348">Proof 
+
+El problema nos dice que <m:math><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>∈</m:mo><m:mi mathvariant="double-struck">R</m:mi></m:mrow></m:math> y que se cumple <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mi>c</m:mi><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo form="prefix">cz</m:mo><m:mo>)</m:mo></m:mrow></m:math>, por lo tanto viendo la aplicación de las propiedades
+comprobaremos si es o no un espacio vectorial.</para>
+    <para id="id2255511">Si <m:math><m:mrow><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mover accent="true"><m:mi>w</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mrow><m:mo>'</m:mo><m:mo>'</m:mo></m:mrow></m:msup><m:mo>)</m:mo></m:mrow><m:mo>∈</m:mo><m:mi>V</m:mi></m:mrow></m:mrow></m:mrow></m:math></para>
+    <list id="id2255629" list-type="bulleted">
+      <item id="uid1"><m:math><m:mrow><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>∈</m:mo><m:mi>V</m:mi></m:mrow></m:math>, esto es <m:math><m:mrow><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>∈</m:mo><m:mi>V</m:mi></m:mrow></m:math>, por lo tanto se cumple la propiedad clausurativa de
+la suma vectorial.
+</item>
+      <item id="uid2"><m:math><m:mrow><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover></m:mrow></m:math>, esto es <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, por lo tanto se cumple la propiedad conmutativa
+de la suma vectorial.
+</item>
+      <item id="uid3"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mover accent="true"><m:mi>w</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mi>w</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, esto es <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mrow><m:mo>'</m:mo><m:mo>'</m:mo></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mrow><m:mo>'</m:mo><m:mo>'</m:mo></m:mrow></m:msup><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, que es lo mismo que <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mrow><m:mo>'</m:mo><m:mo>'</m:mo></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mrow><m:mo>'</m:mo><m:mo>'</m:mo></m:mrow></m:msup><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>+</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, por lo tanto se cumple la propiedad asociativa de la suma
+vectorial.
+</item>
+      <item id="uid4"><m:math><m:mrow><m:mo>∃</m:mo><m:mo>!</m:mo><m:mover accent="true"><m:mn>0</m:mn><m:mo>→</m:mo></m:mover><m:mo>∈</m:mo><m:mi>V</m:mi><m:mo>:</m:mo><m:mover accent="true"><m:mn>0</m:mn><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mn>0</m:mn><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover></m:mrow></m:math>, esto es <m:math><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>⊕</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>⊕</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:math>, por lo tanto se cumple la propiedad modulativa de
+la suma vectorial.
+</item>
+      <item id="uid5"><m:math><m:mrow><m:mo>∃</m:mo><m:mo>!</m:mo><m:mover accent="true"><m:mrow><m:mo>-</m:mo><m:mi>u</m:mi></m:mrow><m:mo>→</m:mo></m:mover><m:mo>∈</m:mo><m:mi>V</m:mi><m:mo>:</m:mo><m:mover accent="true"><m:mrow><m:mo>-</m:mo><m:mi>u</m:mi></m:mrow><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mrow><m:mo>-</m:mo><m:mi>u</m:mi></m:mrow><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mover accent="true"><m:mn>0</m:mn><m:mo>→</m:mo></m:mover></m:mrow></m:math> esto es <m:math><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>⊕</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>⊕</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>)</m:mo></m:mrow></m:math>, por lo
+tanto se cumple la propiedad de la existencia del inverso de la suma
+vectorial.
+</item>
+    </list>
+    <para id="id2256526">Además,</para>
+    <list id="id2256530" list-type="bulleted">
+      <item id="uid6"><m:math><m:mrow><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>∈</m:mo><m:mi>V</m:mi></m:mrow></m:math>, esto es <m:math><m:mrow><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>∈</m:mo><m:mi>V</m:mi></m:mrow></m:math>, por lo tanto se cumple la propiedad clausurativa del producto
+escalar.
+</item>
+      <item id="uid7"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mrow><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, esto es <m:math><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>·</m:mo><m:mi>b</m:mi><m:mo>)</m:mo><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mi>b</m:mi><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:math>,
+por lo cual se cumple la propiedad asociativa del producto escalar.
+</item>
+      <item id="uid8"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:mrow><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, esto es <m:math><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>)</m:mo><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>)</m:mo><m:mo>⊕</m:mo><m:mo>(</m:mo><m:mi>b</m:mi><m:mo>⊙</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>)</m:mo><m:mo>·</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow></m:math>, por lo tanto se cumple la
+primera propiedad de distribución del producto escalar.
+</item>
+      <item id="uid9"><m:math><m:mrow><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mrow><m:mo>(</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>⊕</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>u</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, esto es <m:math><m:mrow><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>z</m:mi><m:mo>)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>⊕</m:mo><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>⊙</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>+</m:mo><m:msup><m:mi>z</m:mi><m:mo>'</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, por lo tanto
+se cumple la segunda propiedad distributiva del producto escalar.
+</item>
+    </list>
+    <para id="id2257224">Una vez desmostradas las propiedades de los espacios vectoriales, podemos
+decir que <m:math><m:mi>V</m:mi></m:math> es un espacio vectorial.
+<m:math><m:mo>□</m:mo></m:math></para>
+<!--empty paragraphs get left behind.-->
+  </content>
+</document>

@@ -1,0 +1,18 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="es">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10581</md:content-id>
+    <md:title>Problemas de Álgebra Lineal</md:title>
+    <md:language>es</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>d32a722a-d9f5-4d55-82a7-cf152be9f0e0</md:uuid>
+<md:slug>problemas-de-algebra-lineal</md:slug>
+</metadata>
+  <col:content>
+    <col:subcollection>
+      <md:title>Espacios Vectoriales Reales</md:title>
+      <col:content>
+        <col:module document="m17552"/>
+      </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>
